@@ -15,12 +15,12 @@ const app: Application = express();
 
 // * Middleware
 app.use(cors(
-//   {
-//   origin: ["https://demo123-xvrs.vercel.app"],  // Allow only your frontend domain
-//   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-//   allowedHeaders: ["Content-Type", "Authorization"],
-//   credentials: true, // if you're using cookies or auth headers
-// }
+  {
+  origin: ["https://demo123-xvrs.vercel.app"],  // Allow only your frontend domain
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true, // if you're using cookies or auth headers
+}
 ));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
